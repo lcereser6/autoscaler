@@ -46,6 +46,7 @@ import (
 	oci "k8s.io/autoscaler/cluster-autoscaler/cloudprovider/oci/instancepools"
 	"k8s.io/autoscaler/cluster-autoscaler/cloudprovider/ovhcloud"
 	"k8s.io/autoscaler/cluster-autoscaler/cloudprovider/rancher"
+	"k8s.io/autoscaler/cluster-autoscaler/cloudprovider/recluster"
 	"k8s.io/autoscaler/cluster-autoscaler/cloudprovider/scaleway"
 	"k8s.io/autoscaler/cluster-autoscaler/cloudprovider/tencentcloud"
 	"k8s.io/autoscaler/cluster-autoscaler/cloudprovider/volcengine"
@@ -84,6 +85,7 @@ var AvailableCloudProviders = []string{
 	cloudprovider.CivoProviderName,
 	cloudprovider.ScalewayProviderName,
 	cloudprovider.RancherProviderName,
+	cloudprovider.ReclusterProviderName,
 	cloudprovider.VolcengineProviderName,
 }
 
@@ -153,6 +155,8 @@ func buildCloudProvider(opts config.AutoscalingOptions,
 		return rancher.BuildRancher(opts, do, rl)
 	case cloudprovider.VolcengineProviderName:
 		return volcengine.BuildVolcengine(opts, do, rl)
+	case cloudprovider.ReclusterProviderName:
+		return recluster.BuildReclusterProvider(opts, do, rl, informerFactory)
 	}
 	return nil
 }
