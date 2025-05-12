@@ -28,6 +28,7 @@ require (
 	github.com/jmattheis/goverter v1.4.0
 	github.com/jmespath/go-jmespath v0.4.0
 	github.com/json-iterator/go v1.1.12
+	github.com/lcereser6/recluster-sync v0.0.0-20250508145519-dd2837993a61
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.19.1
 	github.com/spf13/pflag v1.0.5
@@ -125,7 +126,7 @@ require (
 	github.com/golang-jwt/jwt/v5 v5.2.1 // indirect
 	github.com/golang/groupcache v0.0.0-20210331224755-41bb18bfe9da // indirect
 	github.com/golang/protobuf v1.5.4 // indirect
-	github.com/google/btree v1.0.1 // indirect
+	github.com/google/btree v1.1.3 // indirect
 	github.com/google/cadvisor v0.51.0 // indirect
 	github.com/google/cel-go v0.22.0 // indirect
 	github.com/google/gnostic-models v0.6.8 // indirect
@@ -154,8 +155,8 @@ require (
 	github.com/mohae/deepcopy v0.0.0-20170929034955-c48cc78d4826 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/mxk/go-flowrate v0.0.0-20140419014527-cca7078d478f // indirect
-	github.com/onsi/ginkgo/v2 v2.21.0 // indirect
-	github.com/onsi/gomega v1.35.1 // indirect
+	github.com/onsi/ginkgo/v2 v2.22.0 // indirect
+	github.com/onsi/gomega v1.36.1 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/runc v1.2.1 // indirect
 	github.com/opencontainers/runtime-spec v1.2.0 // indirect
@@ -201,7 +202,7 @@ require (
 	gopkg.in/natefinch/lumberjack.v2 v2.2.1 // indirect
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-	k8s.io/apiextensions-apiserver v0.0.0 // indirect
+	k8s.io/apiextensions-apiserver v0.32.1 // indirect
 	k8s.io/code-generator v0.33.0-alpha.0 // indirect
 	k8s.io/controller-manager v0.33.0-alpha.0 // indirect
 	k8s.io/cri-api v0.33.0-alpha.0 // indirect
@@ -215,6 +216,7 @@ require (
 	k8s.io/mount-utils v0.26.0-alpha.0 // indirect
 	sigs.k8s.io/apiserver-network-proxy/konnectivity-client v0.31.0 // indirect
 	sigs.k8s.io/cloud-provider-azure/pkg/azclient/configloader v0.0.4 // indirect
+	sigs.k8s.io/controller-runtime v0.20.4 // indirect
 	sigs.k8s.io/json v0.0.0-20241010143419-9aa6b5e7a4b3 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.4.2 // indirect
 )
