@@ -290,3 +290,5 @@ replace k8s.io/autoscaler/cluster-autoscaler/apis => ./apis
 replace k8s.io/cri-client => k8s.io/cri-client v0.33.0-alpha.0
 
 replace k8s.io/externaljwt => k8s.io/externaljwt v0.33.0-alpha.0
+
+replace github.com/lcereser6/recluster => ../../recluster-sync
